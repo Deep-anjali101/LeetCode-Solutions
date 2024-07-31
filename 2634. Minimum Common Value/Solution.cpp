@@ -7,7 +7,7 @@ public:
         while(i<nums1.size() && j < nums2.size()) {
             if(nums1[i]==nums2[j]){
                     min=nums2[j];
-                break;
+                return min;
             }
             else if(nums1[i]<nums2[j]){
                 i++;
@@ -17,6 +17,6 @@ public:
         
         }
 
-         return min != INT_MAX ? min : -1;
+         return -1;
     }
 };
