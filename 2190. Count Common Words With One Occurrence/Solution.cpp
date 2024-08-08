@@ -4,16 +4,16 @@ public:
         map<string,int>m1,m2;
         int count=0;
 
-        for(auto &a:words1){
+        for(auto& a:words1){
             ++m1[a];
         }
-        for(auto &a:words2){
+        for(auto& a:words2){
             ++m2[a];
         }
 
-        for(auto &a: words1){
+        for(auto& a: words1){
             if(m1[a]==1 && m2[a]==1){
-                count++;
+                ++count;
             }
             
         }
